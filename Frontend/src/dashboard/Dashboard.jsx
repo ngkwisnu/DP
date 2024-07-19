@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import Header from "./component/Header";
+import Header from "../components/layouts/Header";
 import Card from "./component/Card";
 import Footer from "../components/layouts/Footer";
 import { Link } from "react-router-dom";
