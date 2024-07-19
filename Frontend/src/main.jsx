@@ -14,7 +14,7 @@ root.render(
   <React.StrictMode>
     <BrowserRouter>
       <Routes>
-        <Route path="https://dongeng-pustaka.vercel.app/" element={<App />} />
+        <Route path="/" element={<App />} />
         <Route
           path="https://dongeng-pustaka.vercel.app/login"
           element={<Login />}
