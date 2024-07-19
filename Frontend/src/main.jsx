@@ -14,25 +14,25 @@ root.render(
   <React.StrictMode>
     <BrowserRouter>
       <Routes>
-        <Route path="https://dongeng-pustaka.vercel.app//" element={<App />} />
+        <Route path="https://dongeng-pustaka.vercel.app/" element={<App />} />
         <Route
-          path="https://dongeng-pustaka.vercel.app//login"
+          path="https://dongeng-pustaka.vercel.app/login"
           element={<Login />}
         />
         <Route
-          path="https://dongeng-pustaka.vercel.app//register"
+          path="https://dongeng-pustaka.vercel.app/register"
           element={<Register />}
         />
         <Route
-          path="https://dongeng-pustaka.vercel.app//dashboard"
+          path="https://dongeng-pustaka.vercel.app/dashboard"
           element={<Dashboard />}
         />
         <Route
-          path="https://dongeng-pustaka.vercel.app//dashboard/detail/:id"
+          path="https://dongeng-pustaka.vercel.app/dashboard/detail/:id"
           element={<Detail />}
         />
         <Route
-          path="https://dongeng-pustaka.vercel.app//about"
+          path="https://dongeng-pustaka.vercel.app/about"
           element={<About />}
         />
       </Routes>
