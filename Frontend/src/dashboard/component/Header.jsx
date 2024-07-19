@@ -6,7 +6,7 @@ const Header = () => {
     <div
       className="bg-cover bg-center bg-blend-darken relative"
       style={{
-        backgroundImage: 'url("public/img/hero2.png")',
+        backgroundImage: 'url("img/hero2.png")',
         backgroundSize: "cover",
         backgroundPosition: "center",
         height: "700px",
