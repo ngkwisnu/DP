@@ -15,26 +15,11 @@ root.render(
     <BrowserRouter>
       <Routes>
         <Route path="/" element={<App />} />
-        <Route
-          path="https://dongeng-pustaka.vercel.app/login"
-          element={<Login />}
-        />
-        <Route
-          path="https://dongeng-pustaka.vercel.app/register"
-          element={<Register />}
-        />
-        <Route
-          path="https://dongeng-pustaka.vercel.app/dashboard"
-          element={<Dashboard />}
-        />
-        <Route
-          path="https://dongeng-pustaka.vercel.app/dashboard/detail/:id"
-          element={<Detail />}
-        />
-        <Route
-          path="https://dongeng-pustaka.vercel.app/about"
-          element={<About />}
-        />
+        <Route path="/login" element={<Login />} />
+        <Route path="/register" element={<Register />} />
+        <Route path="/dashboard" element={<Dashboard />} />
+        <Route path="/dashboard/detail/:id" element={<Detail />} />
+        <Route path="/about" element={<About />} />
       </Routes>
     </BrowserRouter>
   </React.StrictMode>
