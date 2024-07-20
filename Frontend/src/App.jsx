@@ -10,7 +10,7 @@ function App() {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const res = await fetch("http://localhost:4000/ceritas");
+        const res = await fetch("http://47.129.5.207:4000/ceritas");
         const { data } = await res.json();
 
         const sortedData = data.sort(
@@ -53,7 +53,13 @@ function App() {
               usia. Mulai perjalanan membaca Anda dan temukan keajaiban di
               setiap cerita!
             </p>
-            <Button color="bg-[#B2AFE7]" px="12" py="3" width="w-1/6" text="Mulai Sekarang" />
+            <Button
+              color="bg-[#B2AFE7]"
+              px="12"
+              py="3"
+              width="w-1/6"
+              text="Mulai Sekarang"
+            />
           </div>
         </div>
       </section>
