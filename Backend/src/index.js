@@ -10,6 +10,8 @@ import LikeRoute from "./Routes/LikeRoute.js";
 import FavoriteRoute from "./Routes/FavoriteRoute.js";
 import SearchRouter from "./Routes/SearchRoute.js";
 import logRequest from "./Middleware/log.js";
+import https from "https";
+import fs from "fs";
 
 const PORT = process.env.PORT;
 const HOST = process.env.HOST;
@@ -39,6 +41,11 @@ app.get("/", (req, res) => {
   console.log("Hello");
 });
 
-server.listen(PORT, () => {
-  console.log(`Server berjalan pada http://${HOST}:${PORT}`);
+const options = {
+  key: fs.readFileSync("../../server.key"),
+  cert: fs.readFileSync("../../server.cert"),
+};
+
+https.createServer(options, app).listen(PORT, HOST, () => {
+  console.log(`Server berjalan pada https://${HOST}:${PORT}`);
 });
