@@ -40,5 +40,5 @@ app.get("/", (req, res) => {
 });
 
 server.listen(PORT, () => {
-  console.log(`Server berjalan pada https://${HOST}:${PORT}`);
+  console.log(`Server berjalan pada http://${HOST}:${PORT}`);
 });
