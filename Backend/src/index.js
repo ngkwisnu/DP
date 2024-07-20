@@ -17,7 +17,7 @@ const HOST = process.env.HOST;
 const app = express();
 app.use(
   cors({
-    origin: "https://dongeng-pustaka-gamma.vercel.app",
+    origin: "http://localhost:5173",
     credentials: true,
   })
 );
