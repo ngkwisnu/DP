@@ -20,7 +20,7 @@ const Dashboard = () => {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        let res = await fetch("http://localhost:4000/ceritas");
+        let res = await fetch("https://47.129.5.207:4000/ceritas");
         let { data } = await res.json();
         setDatas(data);
       } catch (error) {
