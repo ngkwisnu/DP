@@ -42,8 +42,8 @@ app.get("/", (req, res) => {
 });
 
 const options = {
-  key: fs.readFileSync("../../server.key"),
-  cert: fs.readFileSync("../../server.cert"),
+  key: fs.readFileSync("../server.key"),
+  cert: fs.readFileSync("../server.cert"),
 };
 
 https.createServer(options, app).listen(PORT, HOST, () => {
