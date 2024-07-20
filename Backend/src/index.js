@@ -12,6 +12,11 @@ import SearchRouter from "./Routes/SearchRoute.js";
 import logRequest from "./Middleware/log.js";
 import https from "https";
 import fs from "fs";
+import path from "path";
+import { fileURLToPath } from "url";
+
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = path.dirname(__filename);
 
 const PORT = process.env.PORT;
 const HOST = process.env.HOST;
@@ -42,8 +47,8 @@ app.get("/", (req, res) => {
 });
 
 const options = {
-  key: fs.readFileSync("../server.key"),
-  cert: fs.readFileSync("../server.cert"),
+  key: fs.readFileSync(path.resolve(__dirname, "../server.key")),
+  cert: fs.readFileSync(path.resolve(__dirname, "../server.cert")),
 };
 
 https.createServer(options, app).listen(PORT, HOST, () => {
