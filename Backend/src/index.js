@@ -12,6 +12,7 @@ import SearchRouter from "./Routes/SearchRoute.js";
 import logRequest from "./Middleware/log.js";
 
 const PORT = process.env.PORT;
+const HOST = process.env.HOST;
 
 const app = express();
 app.use(
@@ -39,5 +40,5 @@ app.get("/", (req, res) => {
 });
 
 server.listen(PORT, () => {
-  console.log(`Server berjalan pada http://localhost:${PORT}`);
+  console.log(`Server berjalan pada http://${HOST}:${PORT}`);
 });
